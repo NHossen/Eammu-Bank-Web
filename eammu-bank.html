@@ -23,7 +23,7 @@
 
         <div class="bg-[#6ce21c] px-8 py-10 rounded-xl">
             <h4 class="text-[white] text-xl font-medium">Deposit Balance</h4>
-            <h2 class='text-[white] text-4xl'>$000</h2>
+            <h2  class='text-[white] text-4xl'>$<span id="deposit-total">000</span></h2>
         </div>
         
 
@@ -34,7 +34,7 @@
 
         <div class="bg-[#17440e] px-8 py-10 rounded-xl">
             <h4 class="text-[white] text-xl font-medium">Current Balance</h4>
-            <h2 class='text-[white] text-4xl'>$1000000</h2>
+            <h2 class='text-[white] text-4xl'>$<span id="balance-total">1000</span></h2>
         </div>
 
       </div>
@@ -50,15 +50,19 @@
             <!-- Deposit -->
             <div class="bg-[#e7d31f] px-8 py-10 rounded-xl">
                 <h4 class="text-[#000000] text-xl font-medium">Please Deposit</h4>
-                <input class="w-full block mb-4 px-4 py-2 mt-4 rounded-xl" type="number" name="" id="" placeholder="$ Amount You Want To Deposit ">
-                <button id="btn-submit" class="bg-[#ffffff] hover:bg-[#e2e2e2] hover:text-black block mt-4 font-medium text-[#17440e] px-8 py-2 rounded-lg">Deposit</button>
+
+                <input class="w-full block mb-4 px-2 py-2 mt-4 rounded-xl" type="number" name="" id="deposit-field" placeholder="$ Amount You Want To Deposit ">
+
+                <button id="btn-deposit" class="bg-[#ffffff] hover:bg-[#e2e2e2] hover:text-black block mt-4 font-medium text-[#17440e] px-8 py-2 rounded-lg">Deposit</button>
             </div>
             
            <!-- WithDraw -->
             <div class="bg-[#22dbb3] px-8 py-10 rounded-xl">
                 <h4 class="text-[#000000] text-xl font-medium">Please Withdraw</h4>
-                <input class="w-full block mb-4 px-4 py-2 mt-4 rounded-xl" type="number" name="" id="" placeholder="$ Amount You Want To Withdraw">
-                <button id="btn-submit" class="bg-[#ffffff] hover:bg-[#e2e2e2] hover:text-black block mt-4 font-medium text-[#17440e] px-8 py-2 rounded-lg">Deposit</button>
+
+                <input class="w-full block mb-4 px-2 py-2 mt-4 rounded-xl" type="number" name="" id="withdraw-field" placeholder="$ Amount You Want To Withdraw">
+
+                <button id="btn-withdraw" class="bg-[#ffffff] hover:bg-[#e2e2e2] hover:text-black block mt-4 font-medium text-[#17440e] px-8 py-2 rounded-lg">Withdraw</button>
             </div>
            
 
@@ -72,6 +76,6 @@
 
    </footer>
    <!-- Script -->
-   <script src="eammu.js"></script>
+   <script src="deposit.js"></script>
 </body>
 </html>
