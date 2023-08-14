@@ -22,6 +22,15 @@ document.getElementById("btn-withdraw").addEventListener('click',function(){
     const newWithdrawAmountString=withdrawField.value;
 //step 2.5
 const newWithdrawAmount=parseFloat(newWithdrawAmountString);
+// Step 7
+withdrawField.value="";
+
+
+
+// if(isNaN(newWithdrawAmount)){
+//     alert("Please enter your Withdrawl amount")
+//     return;
+// }
 
 // step 3
 
@@ -29,26 +38,33 @@ const withdrawTotalElement=document.getElementById('withdraw-total');
 const previousWithdraeTotalString=withdrawTotalElement.innerText;
 const previousWithdraeTotal=parseFloat(previousWithdraeTotalString);
 
-
 // step 4 
 
-const currenntWithdrawTotal=previousWithdraeTotal+newWithdrawAmount;
-withdrawTotalElement.innerText=currenntWithdrawTotal;
+
+if(newWithdrawAmount>previousWithdraeTotal){
+    alert('You do not have enough credit')
+    return;
+}
 
 //step 5 
 
 const balanceTotalElement=document.getElementById('balance-total');
-
 const prevBalaceString=balanceTotalElement.innerText;
-
 const prevBalaceNum=parseFloat(prevBalaceString);
 
+
+
+
+
+
+const currenntWithdrawTotal=previousWithdraeTotal+newWithdrawAmount;
+withdrawTotalElement.innerText=currenntWithdrawTotal;
 //step 6
+
 
 const newBalaceTotal=prevBalaceNum - newWithdrawAmount;
 
 balanceTotalElement.innerText=newBalaceTotal;
 
-// Step 7
-withdrawField.value="";
+
 })

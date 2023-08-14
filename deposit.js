@@ -9,6 +9,15 @@ document.getElementById('btn-deposit').addEventListener('click',function(){//ste
 //Convert value string to number
     const stringToNumDeposit=parseFloat(depositTotalMain)
 
+      //step-7 - extra clear the deposit field
+
+      depositAmmountMain.value="";
+
+    if(isNaN(stringToNumDeposit)){
+        alert("Please enter your Deposit amount")
+        return;
+    }
+
     //console.log(depositTotalMain);
 
     // step:3 get the deposit ammount
@@ -40,8 +49,6 @@ balanceTotalElement.innerText=currrenTotalBalance;
 
 
 
-    //step-7 - extra clear the deposit field
-
-    depositAmmountMain.value="";
+  
 
 })
