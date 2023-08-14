@@ -19,7 +19,11 @@ document.getElementById('btn-submit').addEventListener("click",function(){
 //step:4 verify password
 
  if (getEmail === "naeemhossen2509@gmail.com" && getPassword ==='naeem'){
-    alert('Welcome to Eammu Bank')
+    //alert('Welcome to Eammu Bank')
+
+    //step 5 redirect another page
+
+    window.location.href="eammu-bank.html"
  }else{
     alert('Please Provide Valid email and password')
 }
