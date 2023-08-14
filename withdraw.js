@@ -27,10 +27,10 @@ withdrawField.value="";
 
 
 
-// if(isNaN(newWithdrawAmount)){
-//     alert("Please enter your Withdrawl amount")
-//     return;
-// }
+if(isNaN(newWithdrawAmount)){
+    alert("Please enter your Withdrawl amount")
+    return;
+}
 
 // step 3
 
@@ -41,10 +41,10 @@ const previousWithdraeTotal=parseFloat(previousWithdraeTotalString);
 // step 4 
 
 
-if(newWithdrawAmount>previousWithdraeTotal){
-    alert('You do not have enough credit')
-    return;
-}
+// if(newWithdrawAmount>previousWithdraeTotal){
+//     alert('You do not have enough credit')
+//     return;
+// }
 
 //step 5 
 
